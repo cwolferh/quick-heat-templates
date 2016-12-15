@@ -1,0 +1,8 @@
+parameters:
+  param1: .-----one-hundred-twenty-chars-here------------------------------------------------------------------------------------.
+resource_registry:
+  "My::Nested0": file:///tmp/quick-heat-templates/nested-depth-5/nested0.yaml
+  "My::Nested1": file:///tmp/quick-heat-templates/nested-depth-5/nested1.yaml
+  "My::Nested2": file:///tmp/quick-heat-templates/nested-depth-5/nested2.yaml
+  "My::Nested3": file:///tmp/quick-heat-templates/nested-depth-5/nested3.yaml
+  "My::Deepest::Template": file:///tmp/quick-heat-templates/nested-depth-5/deepest.yaml

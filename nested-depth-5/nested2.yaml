@@ -1,0 +1,18 @@
+
+heat_template_version: 2015-04-30
+parameters:
+  param1:
+    type: string
+    default: param-default-depth2-more-text-for-a-long-string-more-text-for-a-long-string-more-text-for-a-long-string
+resources:
+  res0:
+    type: My::Nested3
+    properties:
+      param1: {get_param: param1}
+  res1:
+    type: My::Nested3
+    properties:
+      param1: {get_param: param1}
+outputs:
+  output:
+    value: {list_join: ['.', [ {get_attr: [res0, output] }, {get_attr: [res1, output] } ] ]}
