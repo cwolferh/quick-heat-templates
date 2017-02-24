@@ -4,11 +4,11 @@ parameters:
   param1:
     type: string
 resources:
-  res0:
+  resdeep_0:
     type: OS::Heat::Value
     properties:
       value: {get_param: param1}
-  res1:
+  resdeep_1:
     type: OS::Heat::Value
     properties:
       value: {get_param: param1}
